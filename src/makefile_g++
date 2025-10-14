@@ -1,0 +1,14 @@
+XX = g++
+XARGS = -c
+
+LARGS = -shared -fPIC
+
+libhstring.a : hstring.o
+	ar rcs libhstring.a hstring.o
+
+hstring.o : hstring.cpp
+	$(XX) $(XARGS) hstring.cpp
+
+install : libhstring.a hstring.h
+	copy libhstring.a C:\MinGW\lib
+	copy hstring.h C:\MinGW\include
