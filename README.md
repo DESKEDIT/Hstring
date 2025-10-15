@@ -10,7 +10,7 @@ A custom string library for C++
    
 <strong>The file will be compiled as "libhstring.a"
 
-To move the library to G++'s library directory and move the header to G++'s include directory, run </strong>`make -f makefile_g++ install`
+To move the library to G++'s library directory and move the header to G++'s include directory, run </strong>`make -f makefile_g++ install` or manually copy the `libhstring.a` and the `hstring.h` to their respective directorys
  
 
 ## Todo
